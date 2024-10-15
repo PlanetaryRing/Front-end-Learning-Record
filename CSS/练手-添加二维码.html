@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            display: inline-block;
+            margin: 50px;
+            border: 1px solid #666;
+        }
+
+        li {
+            float: left;
+            list-style: none;
+        }
+
+        a {
+            display: block;
+
+            margin: 0, auto;
+            border-right: 1px solid #666666;
+            width: 200px;
+            height: 25px;
+
+            font-size: 20px;
+            color: #000;
+            text-decoration: none;
+            text-align: center;
+            line-height: 25px;
+
+
+            box-sizing: border-box;
+        }
+
+        li:nth-child(5) a{
+            border: none;
+        }
+
+        li:nth-child(4) a{
+            position: relative;
+        }
+
+        .code{
+            position: absolute;
+            left: 50%;
+            margin-left: -50px;
+            margin-top: 25px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">我要投资</a></li>
+        <li><a href="#">平台咨询</a></li>
+        <li><a href="#">新手专区</a></li>
+        <li><a href="#">手机微金所<img src="../QRcode.png" alt="" class="code"></a></li>
+        <li><a href="#">个人中心</a></li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 后代选择器 */
+        /* 格式: */
+        /* 父级选择器 子级选择器 子级选择器 ...{属性:属性值;} */
+        /* 选中后代的所有同选择器的后代 */
+        div p{
+            color: red;
+            font-size: 66px;
+        }
+
+        div p span{
+            color: yellow;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p>这是p标签</p>
+    <div>
+        <p>这是div标签中嵌套的p标签
+            <br>
+            <span>这是div\p\span标签</span>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0 0;
+            margin: 0 0;
+        }
+
+
+        li
+        {
+            list-style: none;
+            list-style-type: none;
+        }
+
+        .promo
+        {
+            position: relative;
+            left: 50%;
+            top: 100px;
+            transform: translateX(-50%);
+
+            width: 600px;
+            height: 337.5px;
+
+            background-color: skyblue;
+            box-shadow: 5px 5px 5px rgba(135,206,235,0.8)
+        }
+
+        .next
+        {
+            position: absolute;
+            width: 40px;
+            height: 60px;
+            background-color: rgba(0,0,0,0.5);
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+        .next:hover
+        {
+            display: inline-block;
+            background-color: rgba(255,255,255,0.5);
+        }
+
+        .prve
+        {
+            position: absolute;
+            width: 40px;
+            height: 60px;
+            background-color: rgba(0,0,0,0.5);
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+        .prve:hover
+        {
+            background-color: rgba(255,255,255,0.5);
+        }
+
+        .promo_nav
+        {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 13px;
+            border-radius: 7px;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .promo_nav li
+        {
+            display: block;
+            float: left;
+            width: 8px;
+            height: 8px;
+            background-color: rgba(255,255,255);
+            border-radius: 4px;
+            margin: 3px 3px;
+        }
+
+        .promo_nav li:hover
+        {
+            display: block;
+            float: left;
+            width: 8px;
+            height: 8px;
+            background-color: rgb(155,155,155);
+            border-radius: 4px;
+            margin: 3px 3px;
+        }
+
+        .promo_nav .selected
+        {
+            background-color: #ff5000;
+        }
+
+        ul li button
+        {
+            float: left;
+            width: 8px;
+            height: 8px;
+            border: 0;
+            background-color: rgba(255,255,255,0);
+        }
+    </style>
+</head>
+<body>
+    <div class="promo">
+        <a href="#">
+            <div class="next">
+                <img src="./Sprite-0001.png" alt="下一张图片" title="下一张图片">
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="prve">
+                <img src="./Sprite-0002.png" alt="上一张图片" title="上一张图片">
+            </div>
+        </a>
+        <img src="./彩色png.png" alt="这是图片" width="600px">
+        <ul class="promo_nav">
+            <li><button></button></li>
+            <li class="selected"><button></button></li>
+            <li><button></button></li>
+            <li><button></button></li>
+            <li><button></button></li>
+        </ul>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>

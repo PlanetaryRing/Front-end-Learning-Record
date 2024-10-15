@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            width: 200px;
+            height: 200px;
+            background-color: #6cf;
+        }
+        p
+        {
+            margin-top: 500px;
+        }
+        .top
+        {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #894562;
+            z-index: 3;
+        }
+        .mid
+        {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #ff9450;
+            z-index: 2;
+        }
+        .bottom
+        {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            background-color: #129456;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>在定位选择的时候,可以设置z-index来控制盒子模型的堆放次序(相当于是控制盒子的z轴),并且z-index是定位属性的盒子才有的属性</p>
+    <div class="top">
+        第一个div
+    </div>
+
+    <div class="mid">
+        第二个div
+    </div>
+
+    <div class="bottom">
+        第三个div
+    </div>
+</body>
+</html>

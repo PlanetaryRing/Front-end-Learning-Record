@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p
+        {
+            /* 当多次重复的对属性值进行修改的时候,最终效果以最后一次修改的为准,修改之间相互覆盖 */
+            color: #5900ff;
+            color: chocolate;
+
+            /* font-size:设置字体大小 */
+            /* 浏览器默认的字号大小为16px */
+            font-size: 30px;
+
+            /* font-weight:设置文字的粗细 */
+            /* 可以设置关键字:normal/bold */
+            /* 也可以设置数字(100~900) */
+            /* 其中normal为400,bold为700 */
+            font-weight: 900;
+
+            /* font-style:控制文字是否倾斜 */
+            /* 取值:normal(正常)/italic(倾斜) */
+            font-style: italic;
+
+            /* font-family:控制字体 */
+            /* Windows/macOS的默认字体为微软雅黑/苹方 */
+            /* 取值可以是具体的字体名称;比如:
+            具体的字体:Microsoft YaHei,微软雅黑,宋体,楷体
+            字体的系列:sans-serif,serif,monospace */
+            /* 渲染规则:依次从左到右寻找电脑是否安装该字体,若都不支持,则显示最后字体系列的默认字体 */
+            /* 若字体名称包含多个单词,建议使用引号包裹 */
+            /* 最后字体系列不需要引号包裹 */
+            font-family: 楷体,宋体,黑体,sans-serif;/* 最后是默认字体,如果用户的设备不包含前面的字体系列,则显示sans-serif中存在的字体 */
+            /* 字体系列 */
+            /* sans-serif:无衬线字体(方块字体) */
+            /* serif:衬线字体(有顿笔的字体) */
+            /* monospace:等宽字体(每个字所占用的宽度是相等的) */
+        }
+    </style>
+</head>
+<body>
+    <p>夜晚，漫步在安静的街道上，能闻到微弱的清香。灯火昏暗，街角的店铺在安静地散发着光芒。这一刻，我觉得生命在这样的安宁中，变得更加美好而真实。</p>
+</body>
+</html>

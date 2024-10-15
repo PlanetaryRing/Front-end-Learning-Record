@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .biggerBox
+        {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: rgba(132,56,245,0.5);
+        }
+
+        .floatBox
+        {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .posBox
+        {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="biggerBox">
+        <div class="floatBox">
+
+        </div>
+        <p>浮动的盒子会盖住标准流文字和图片的盒子,但是不会遮挡文字和图片</p>
+    </div>
+    <hr>
+    <div class="biggerBox">
+        <div class="posBox">
+
+        </div>
+        <p>定位的盒子会遮盖标准流文字和图片,以及对应的盒子</p>
+    </div>    
+</body>
+</html>

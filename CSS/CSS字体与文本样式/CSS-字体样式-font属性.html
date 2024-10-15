@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p
+        {
+            /* 一个属性的冒号后面写有多个属性值的写法叫做复合属性,属性之间使用空格隔开 */
+            /* 以下是font设置的简写方式,各个属性排列如下 */
+            /* font:style weight size family */
+            /* 仅可以省略前两个属性不写,省略的属性将被设置为默认值 */
+            font:italic 700 30px 楷体;
+        }
+        div
+        {
+            /* 此处的font省略了style与weight属性 */
+            font:30px 楷体;
+        }
+    </style>
+</head>
+<body>
+    <p>这是p标签</p>
+    <div>这是div标签</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- label标签 -->
+    <!-- 作用是点击文字的时候也可以选中对应的标签 -->
+    <!-- 有两种使用方法 -->
+    <!-- 1、在input标签中添加id属性,并将label标签中的for属性设置为id相同的值,表示两者绑定 -->
+    <!-- 2、使用label标签把input标签包裹,并删除标签的id与for属性的值 -->
+    性别:
+    <input type="radio" name="gender" id="male"> <label for="male">男</label>
+    <label><input type="radio" name="gender">女</label>
+</body>
+</html>

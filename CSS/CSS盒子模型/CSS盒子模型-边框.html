@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* 边框属性 */
+            /* border:(线条粗细) (线条种类) (线条颜色) */
+            /* solid(实线)/dashed(虚线)/dotted(点状线) */
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border: 25px dashed blue;
+        }
+
+        .single_dirct {
+            /* 边框-单方向设置 */
+            /* border-方位名词:属性值 */
+            /* 所写的方位名词即需要的边框 */
+
+            /* 如下,添加左边和底部的边框 */
+            border-left: 10px solid green;
+            border-bottom: 15px dotted blue;
+            border-right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="single_dirct"> </div>
+</body>
+
+</html>

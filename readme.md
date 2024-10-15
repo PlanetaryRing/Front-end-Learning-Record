@@ -1,0 +1,1 @@
+* 本仓库是基于[黑马程序员pink老师前端入门教程](https://www.bilibili.com/video/BV14J4114768)的学习记录

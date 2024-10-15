@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imgBedrock
+        {
+            margin: 0 auto;
+            position: relative;
+            width: 600px;
+            height: 337.5px;
+        }
+        
+        .mask
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5) url(../PIC.jpg) no-repeat center center;
+        }
+
+        .imgBedrock:hover .mask
+        {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgBedrock">
+        <img src="../CSS定位装饰/彩色png.png" alt="图片" width="600px">
+        <div class="mask">
+
+        </div>
+    </div>
+</body>
+</html>

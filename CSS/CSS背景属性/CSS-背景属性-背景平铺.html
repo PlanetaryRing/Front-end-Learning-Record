@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 0 auto;
+        }
+
+        .lighted_word{
+            font-size: 66px;
+            font-weight: 700;
+            text-align: center;
+            color: gold;
+            font-family: 黑体,serif;
+        }
+
+        /* 此时设置的背景图片是平铺的 */
+        .background_repeat {
+            background-color: rgba(88, 88, 88, .5);
+            background-image: url("../0f9716dab6fd526661ee696da418972bd507365b.gif");
+            width: 600px;
+            height: 600px;
+        }
+
+        /* 关闭背景图片重复 */
+        .background_no-repeat {
+            background-repeat: no-repeat;
+            background-color: rgba(14, 65, 78, .5);
+            background-image: url("../0f9716dab6fd526661ee696da418972bd507365b.gif");
+            height: 600px;
+            width: 600px;
+        }
+
+        /* x轴方向上重复 */
+        .background_repeat-x {
+            background-repeat: repeat-x;
+            background-color: rgba(14, 65, 78, .5);
+            background-image: url("../0f9716dab6fd526661ee696da418972bd507365b.gif");
+            height: 600px;
+            width: 600px;
+        }
+
+        /* y轴方向上重复 */
+        .background_repeat-y {
+            background-repeat: repeat-y;
+            background-color: rgba(14, 65, 78, .5);
+            background-image: url("../0f9716dab6fd526661ee696da418972bd507365b.gif");
+            height: 600px;
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background_repeat lighted_word">重复</div>
+    <div class="background_no-repeat lighted_word">不重复</div>
+    <div class="background_repeat-x lighted_word">x轴方向上重复</div>
+    <div class="background_repeat-y lighted_word">y轴方向上重复</div>
+</body>
+
+</html>

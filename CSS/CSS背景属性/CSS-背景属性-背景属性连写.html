@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background{
+            /* background属性连写 */
+            /* background属性连写不分先后 */
+            /* 推荐写法: background:color image repeat position */
+            /* 省略写法:如果盒子大小与背景图片一样大小,可以直接写作: */
+            /* background:url(); */
+            background: pink url("../../bigpic.jpg") no-repeat center center;
+        }
+
+        .shorted_background{
+            background: url("../../bigpic.jpg");
+            width: 30px;
+            height: 30px;
+        }
+
+        .defualt_div{
+            margin: 0 auto;
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background defualt_div"></div>
+    <div class="shorted_background"></div>
+</body>
+</html>

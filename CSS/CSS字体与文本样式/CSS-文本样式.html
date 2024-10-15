@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            /* text-indent:文本缩进 */
+            /* 单位可以是px(像素)/em(字符) */
+            text-indent: 2em;
+
+            /* text-decoration:文本修饰 */
+            /* 可用的值为: */
+            /* underline-下划线 */
+            /* line-through-删除线 */
+            /* overline-上划线 */
+            /* none-无装饰线(常用于清除a标签的默认下划线) */
+            text-decoration: line-through;
+
+            /* line-height:调整行高 */
+            /* 取值单位可以是数字+px/倍数(当前的font-size*倍数) */
+            /* 行高=上间距+字高+下间距 */
+            /* 在font复合属性中,line-height可以连写在属性内,顺序如下: */
+            /* font:style weight size/line-height family */
+            /* size与line-height之间使用"/"隔开 */
+            line-height: 2;
+        }
+
+        h1{
+            /* text-align:文本水平对齐 */
+            /* 取值可以是left(左对齐)/center(居中)/right(右对齐) */
+            /* 此属性可以对文本,span,a,input,img标签使用,效果是调整其对其方式 */
+            /* 使用效果需要在对应的标签中添加,由于图包含在div标签中,则需要在div标签里写上center属性值 */
+            /* 即调整元素居中需要对其父级元素进行设置 */
+            text-align: center;
+        }
+
+        .center{
+            /* 设置文字对齐格式为中间 */
+            text-align: center;
+        }
+
+        .default{
+            /* 设置文字格式为无装饰的格式 */
+            text-decoration: none;
+        }
+
+        #div_center{
+            /* margin是使得标签居中,而不是标签内元素居中 */
+            margin:0 auto;
+            width: 600px;
+            height: 600px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>标题</h1>
+    <p>每个人都有自己的一段人生旅程，有些人的旅程平坦而顺利，有些人则面临着巨大的挑战和困难。无论是什么样的旅程，我们都应该保持勇气和坚韧的品质，不断前进，不断追寻自己的梦想和目标。在这个旅程中，我们也需要学会倾听和尊重别人的想法和意见，学会包容和宽容。生命是一场宝贵的旅程，我们应该珍惜和享受这个旅程中的每一个瞬间，感恩每一个伴随我们前行的人和事物。无论何时，都要坚信自己的内心，相信自己可以克服任何困难和挑战，实现自己的梦想和目标。在这个旅程中，我们也应该学会关注他人的需要和帮助他人，成为一个有温度和有爱心的人。这样，我们的人生旅程就会更加精彩和充实，我们也会成为更好的自己。</p>
+    <div class="center"><img src="../../image/QQ图片20200329160522.gif" alt="显示图片失败" title="这是图片"></div>
+    <div class="center"><a href="../../综合案例-带跳转/index.html" class="default">跳转到综合案例</a></div>
+    <div id="div_center" class="center">水平居中</div>
+</body>
+</html>

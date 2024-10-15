@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3过渡效果</title>
+    <style>
+        /* transition:要过渡的属性 花费时间 运动曲线 何时开始; */
+        /* 1. 属性:想要变化的CSS属性,宽度高度,背景颜色,内外边距都可以,如果需要改变所有的属性,则可以写一个all */
+        /* 2. 花费时间:单位是秒,必须写单位,可以写0.5s */
+        /* 3. 运动曲线:默认是ease(可以省略) */ /* ease是逐渐慢下来 */
+        /* 4. 何时开始:单位是秒,必须写单位,可以设置延迟触发的时间,默认是0s(可以省略) */
+
+        .demo
+        {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            transition: width 0.5s ease 0s;
+        }
+
+        .demo:hover
+        {
+            width: 400px;
+        }
+
+        .demo2
+        {
+            width: 200px;
+            height: 100px;
+            background-color: green;
+            transition: width 0.5s ease 0s,height 0.5s ease 0s;
+        }
+
+        .demo2:hover
+        {
+            width: 400px;
+            height: 200px;
+        }
+
+        .demo3
+        {
+            position: relative;
+            left: 0;
+            width: 200px;
+            height: 100px;
+            background-color: yellow;
+            transition: left 0.5s;
+        }
+
+        .demo3:hover
+        {
+            left: 100px;
+        }
+
+        .demo4
+        {
+            width: 200px;
+            height: 100px;
+            background-color: chocolate;
+            transition: background-color 0.5s;
+        }
+
+        .demo4:hover
+        {
+            background-color: teal;
+        }
+
+        .demo5
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 100px;
+            height: 200px;
+            background-color: palegoldenrod;
+            box-shadow: 0 0 0;
+            transition: box-shadow 0.4s,transform 0.4s;
+        }
+
+        .demo5:hover
+        {
+            box-shadow: 0 1px 3px rgba(66,66,66,0.8);
+            transform: translate(-50%,-55%);
+        }
+
+        .bg
+        {
+            margin: 0 auto;
+            margin-top: 50px;
+            position: relative;
+            width: 200px;
+            height: 400px;
+            background-color: #fff;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body style="background-color: #aaa;">
+    <div class="demo2">长宽同变效果</div>
+    <div class="demo">伸长效果</div>
+    <div class="demo3">位移效果</div>
+    <div class="demo4">渐变色效果</div>
+    <hr>
+    <div class="bg">
+        <div class="demo5">选中浮动效果</div>
+    </div>
+</body>
+</html>

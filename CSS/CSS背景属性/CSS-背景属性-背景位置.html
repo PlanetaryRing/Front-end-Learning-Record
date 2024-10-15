@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 0 auto;
+        }
+
+        .background_img_byorder{
+            width: 600px;
+            height: 600px;
+            background-image: url("../../pic.jpg");
+            background-repeat: no-repeat;
+            background-color: rgba(56,96,125,.5);
+            /* 背景图片位置显示 */
+            /* background-position:水平方向位置 垂直方向位置; */
+            /* 水平方位名词:left,center,right */
+            /* 垂直方位名词:top,center,bottom */
+            background-position: center top;
+        }
+
+        .background_img_px{
+            width: 600px;
+            height: 600px;
+            background-image: url("../../pic.jpg");
+            background-repeat: no-repeat;
+            background-color: rgba(56,96,125,.5);
+            /* 使用偏移像素确定 */
+            background-position: 250px 100px;
+        }
+
+        .background_img_mix{
+            width: 600px;
+            height: 600px;
+            background-image: url("../../pic.jpg");
+            background-repeat: no-repeat;
+            background-color: rgba(56,96,125,.5);
+            /* 两者可以混合使用,不过按照先x后y */
+            background-position: left 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background_img_byorder"></div><br>
+    <div class="background_img_px"></div><br>
+    <div class="background_img_mix"></div>
+</body>
+</html>

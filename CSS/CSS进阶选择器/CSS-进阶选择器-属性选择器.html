@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[value]
+        {
+            color: red;
+            font-weight: bold;
+        }
+
+        input[type="text"]
+        {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* 选择以"***"属性值开头的元素 */
+        div[class^="box"]
+        {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            background-color: red;
+        } 
+    </style>
+</head>
+<body>
+    <p>使用属性选择器,选择具有某某属性的标签</p>
+    <p>例如下面的input标签,其中一个带有value属性</p>
+    <input type="text" value="这是带有value属性的input">
+    <br>
+    <input type="text">
+    <br>
+    <p>利用属性选择器将字体加粗变红包</p>
+    <code>
+        /* 选择是input并且具有value属性的,用[]包含具有的属性 */<br>
+        input[value]<br>
+        {<br>
+            &emsp;color: red;<br>
+            &emsp;font-weight: bold;<br>
+        }<br>
+    </code>
+
+    <hr>
+
+    <p>属性选择器还可以选择指定属性值的元素</p>
+    <p>例如如下的input类型,分别为text和password,两者的type值不同,其他的均一致,利用属性选择器修改text的内容</p>
+    <input type="text" name=""><span>←此时输入的文字为加粗红色</span><br>
+    <input type="password" name=""><span>←此时输入的文字为默认</span><br>
+    <code>
+        /* 选择具有某种属性,并且属性为某值的标签 */<br>
+        input[type="text"]<br>
+        {<br>
+            &emsp;color: red;<br>
+            &emsp;font-weight: bold;<br>
+        }<br>
+    </code>
+
+    <hr>
+
+    <p>属性选择器可以选择以某属性值开头的元素</p>
+    <p>例如,下面的四个div标签的类名依次为box1~box4,现在需要将其全部选中,并更改其颜色为红色</p>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <br>
+    <code>
+        /* 选择以"***"属性值开头的元素 */<br>
+        div[class^="box"]<br>
+        {<br>
+            &emsp;display: inline-block;<br>
+            &emsp;width: 50px;<br>
+            &emsp;height: 50px;<br>
+            &emsp;margin-right: 10px;<br>
+            &emsp;background-color: red;<br>
+        } <br>
+        /* "$="是选择以某属性值结尾的元素 */
+        /* "*="是选择含有字段的属性的元素 */
+    </code>
+
+    <hr>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      display: flex;
+      height: 200px;
+      width: 400px;
+      background-color: lightblue;
+    }
+
+    div span{
+      height: 50px;
+      width: 150px;
+      margin: 10px 10px;
+      background-color: yellow;
+    }
+
+    .wrap{
+      flex-wrap: wrap;
+    }
+
+    .wrap-reverse{
+      flex-wrap: wrap-reverse;
+    }
+  </style>
+</head>
+<body>
+  <i>flex默认布局不换行</i>
+  <br>
+  <i>当内部盒子的默认大小超过父级元素时会压缩默认大小</i>
+  <br>
+  <i>默认不换行</i>
+  <div class="no-wrap">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+  </div>
+  <hr>
+  <i>添加flex-wrap: wrap;属性后换行</i>
+  <div class="wrap">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+  </div>
+
+  <hr>
+  <div class="wrap-reverse">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+  </div>
+</body>
+</html>

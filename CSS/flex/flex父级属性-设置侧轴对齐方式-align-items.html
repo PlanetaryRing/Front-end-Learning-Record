@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .father {
+      display: flex;
+      /* 主轴为x轴 */
+      justify-content: center;
+      /* 侧轴是y轴 */
+      align-items: center;
+      width: 250px;
+      height: 200px;
+      background-color: lightseagreen;
+    }
+
+    .son {
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+      background-color: yellow;
+    }
+    .warp{
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <i>align-items设置侧轴的对齐方式</i>
+  <div class="father">
+    <div class="son">1</div>
+    <div class="son">2</div>
+    <div class="son">3</div>
+  </div>
+  <hr>
+  <div class="father warp">
+    <div class="son">1</div>
+    <div class="son">2</div>
+    <div class="son">3</div>
+    <div class="son">4</div>
+    <div class="son">5</div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,784 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?ftll0f');
+    src: url('../fonts/icomoon.eot?ftll0f#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?ftll0f') format('truetype'),
+        url('../fonts/icomoon.woff?ftll0f') format('woff'),
+        url('../fonts/icomoon.svg?ftll0f#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+i {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    list-style-type: none;
+}
+
+textarea {
+    resize: none;
+}
+
+input {
+    /* 去除边框 */
+    border: none;
+    /* 去除文字阴影 */
+    text-shadow: none;
+    /* 去除文本装饰 */
+    text-decoration: none;
+    /* 设置文本颜色 */
+    color: inherit;
+    /* 设置字体样式 */
+    font: inherit;
+    /* 设置光标为默认样式 */
+    cursor: default;
+    /* 设置按钮为inline元素，防止按钮宽度撑满容器 */
+    display: inline-block;
+    /* 去除用户选择样式 */
+    user-select: none;
+    /* 去除外边框 */
+    outline: none;
+    /* 去除box-shadow阴影 */
+    box-shadow: none;
+    /* 去除点击时的虚线框 */
+    -webkit-tap-highlight-color: transparent;
+}
+
+/******************************************/
+/* 网站头 */
+.header_container {
+    /* 用于装几个选单 */
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+    height: 31px;
+}
+
+.log_in {
+    font-size: 12px;
+    line-height: 31px;
+    color: #666;
+}
+
+.sign_up {
+    font-size: 12px;
+    line-height: 31px;
+    color: #c81623;
+}
+
+.header_ul {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header_ul li {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 1px solid #666;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #666;
+}
+
+.header_ul li:first-child {
+    border-left: 0;
+}
+
+.header_ul li a {
+    display: inline-block;
+}
+
+/* 导航栏 */
+nav {
+    margin-top: 25px;
+    position: relative;
+    height: 125px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.nav_container {
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+    height: 125px;
+}
+
+.all_goods_classify_head {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 209px;
+    height: 45px;
+    background-color: #b1191a;
+    text-align: center;
+    font-size: 16px;
+    font-family: YaHei;
+    line-height: 45px;
+    color: #fff;
+}
+
+.search_and_nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 981px;
+    height: 125px;
+
+}
+
+.search_and_nav ul {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.search_and_nav ul li {
+    display: inline-block;
+}
+
+.search_and_nav ul li a {
+    display: inline-block;
+    height: 45px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 16px;
+    line-height: 45px;
+    color: #333;
+}
+
+/* 以下是搜索框附近的布局 */
+.search {
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 128px;
+    width: 538px;
+    height: 54px;
+}
+
+.search_container {
+    margin: 0 auto;
+    position: relative;
+    width: 534px;
+    height: 32px;
+    border: 2px solid #b1191a;
+}
+
+.search_container input[type="text"] {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 454px;
+    height: 32px;
+    border: 0;
+    padding-left: 12px;
+    font-size: 14px;
+    line-height: 36px;
+}
+
+.search_container input[type="submit"] {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 78px;
+    height: 32px;
+    background-color: #b1191a;
+    box-shadow: 0;
+
+    outline: none;
+    cursor: pointer;
+
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+}
+
+.search ul {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.search ul li {
+    display: inline-block;
+}
+
+.search ul li a {
+    display: inline-block;
+    height: 12px;
+    padding-left: 12px;
+    padding-right: 13px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #666;
+}
+
+.search ul li a:hover {
+    color: #c81623;
+}
+
+
+.cart_box {
+    position: absolute;
+    top: 0;
+    right: 65px;
+    width: 138px;
+    height: 35px;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+
+    text-align: center;
+}
+
+.cart_box span:first-child {
+    font-size: 12px;
+    line-height: 35px;
+    color: #d84a4a;
+}
+
+.cart_box span:last-child {
+    font-family: YaHei;
+    font-size: 12px;
+    line-height: 35px;
+    color: #666;
+}
+
+/*****************************************/
+/* banner区域 */
+.list_banner_article {
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    width: 1200px;
+    height: 465px;
+
+}
+
+/* 所有物品分类的表 */
+.all_goods_classify_list {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 209px;
+    height: 465px;
+    background-color: #c81623;
+}
+
+/* 选中分类列表的单项的盒子 */
+.all_goods_classify_list .classified_goods {
+    display: block;
+    width: 209px;
+    height: 31px;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 11px;
+    font-size: 14px;
+    line-height: 31px;
+    color: #fff;
+}
+
+.all_goods_classify_list .classified_goods:hover {
+    color: #c81623;
+    background-color: #fff;
+}
+
+/* 选中分类列表中单项的文字 */
+.all_goods_classify_list .classified_goods .classified_goods_name {
+    display: inline-block;
+    height: 31px;
+}
+
+/* 选中列表中单项的箭头 */
+.all_goods_classify_list .classified_goods .pointer {
+    float: right;
+    height: 31px;
+}
+
+/* 包含banner的盒子 */
+.banner {
+    position: absolute;
+    left: 219px;
+    top: 10px;
+    display: inline-block;
+    width: 721px;
+    height: 455px;
+}
+
+/* banner右侧的新闻栏目 */
+.article {
+    margin-bottom: 6px;
+    position: absolute;
+    right: 0;
+    top: 11px;
+    width: 248px;
+    height: 374px;
+    border: 1px solid #e4e4e4;
+}
+
+/* 新闻栏表头 */
+.article .news_header {
+    box-sizing: border-box;
+    position: relative;
+    width: 248px;
+    height: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px dotted #e4e4e4;
+
+    font-size: 14px;
+    font-family: YaHei;
+    line-height: 32px;
+    color: #333;
+}
+
+/* 选择右侧的更多 */
+.article .news_header .news_header_more {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    color: #333;
+}
+
+/* 选择新闻列表 */
+.article .news_list {
+    position: relative;
+    width: 248px;
+    height: 130px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+/* 单条新闻盒子 */
+.article .news_list .news_content {
+    box-sizing: border-box;
+    padding-left: 12px;
+    width: 248px;
+    height: 24px;
+    line-height: 24px;
+}
+
+/* 分别控制新闻类别和新闻标题 */
+.article .news_list .news_content .news_content_classname {
+    font-weight: bold;
+    font-size: 12px;
+    color: #666;
+}
+
+.article .news_list .news_content .news_content_title {
+    font-size: 12px;
+    color: #666;
+}
+
+/* 控制按钮图 */
+.btn_map {
+    width: 248px;
+    height: 208px;
+
+    background-image: url(../images/icons.png);
+    background-position: 0 0;
+}
+
+/* 控制单个按钮的参数 */
+.btn_map .btn_in_map {
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: -1px;
+    margin-left: -1px;
+    width: 63px;
+    height: 71px;
+    border: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+/* 为图片留出空白 */
+.btn_map .btn_in_map .btn_box {
+    width: 62px;
+    height: 50px;
+}
+
+.btn_map .btn_in_map .btn_describe {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    color: #666;
+}
+
+/* 处理右下角的广告 */
+.bargain {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    height: 75px;
+}
+
+/***********************************/
+/* 每日推荐盒子 */
+.daily_recommend {
+    margin: 0 auto;
+    margin-top: 11px;
+    position: relative;
+    width: 1200px;
+    height: 163px;
+
+}
+
+.daily_recommend .daily_recommend_title {
+    position: relative;
+    width: 204px;
+    height: 163px;
+    background-color: #5c5251;
+}
+
+/* 选中时钟图片 */
+.daily_recommend .daily_recommend_title .clock_img {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    width: 57px;
+    height: 57px;
+    background-image: url(../images/clock.png);
+}
+
+/* 选中"今日推荐"四个字 */
+.daily_recommend .daily_recommend_title .sentence_daily_recommend {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    width: 76px;
+    height: 19px;
+    font-size: 19px;
+    line-height: 19px;
+    color: #fff;
+}
+
+/* 选中推荐的物品列表 */
+.recommend_goods_list {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 996px;
+    height: 163px;
+    background-color: #ebebeb;
+}
+
+/* 选中li,为页面添加内边距 */
+.recommend_goods_list li {
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    width: 249px;
+    height: 163px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.recommend_goods_list>li>a {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 248px;
+    height: 143px;
+    border-right: 1px solid #dddddd;
+
+    background-image: url(../upload/recom_03.jpg);
+}
+
+.recommend_goods_list>li>.recommend_goods_list_last {
+    border-right: 0;
+}
+
+/*****************************************/
+/* 客制化推荐页 */
+.customized_recommendation {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 1200px;
+    height: 281px;
+}
+
+.words_container {
+    box-sizing: border-box;
+    position: relative;
+    width: 1200px;
+    height: 48px;
+}
+
+.words_container .sentence_guess_you_like {
+    font-size: 18px;
+    line-height: 48px;
+    color: #333;
+}
+
+.words_container>button[type="button"] {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+    background-color: transparent;
+
+    font-size: 12px;
+    line-height: 12px;
+    color: #666;
+    font-family: icomoon;
+
+    cursor: pointer;
+}
+
+/* 选中"猜你喜欢"的标签盒子 */
+.customized_recommendation .goods_label_container {
+    width: 1200px;
+    height: 231px;
+    border: 1px solid #ededed;
+}
+
+.customized_recommendation .goods_label_container .label {
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    width: 200px;
+    height: 231px;
+}
+
+.customized_recommendation .goods_label_container .goods_info {
+    position: absolute;
+    bottom: 13px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 202px;
+    height: 62px;
+    border-right: 1px solid #ededed;
+}
+
+.customized_recommendation .goods_label_container .goods_pic {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+
+}
+
+.customized_recommendation .goods_label_container .goods_info .goods_name {
+    position: absolute;
+    width: 120px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #666;
+}
+
+.customized_recommendation .goods_label_container .goods_info .goods_price {
+    position: absolute;
+    bottom: 0;
+    left: 36px;
+    font-size: 18px;
+    color: #df3033;
+}
+
+.customized_recommendation .goods_label_container .last_goods_info {
+    border-right: 1px solid transparent;
+}
+
+/* 网页底部设计 */
+footer {
+    position: relative;
+    height: 417px;
+    background-color: #f5f5f5;
+}
+
+footer .footer_content {
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+    height: 417px;
+}
+
+footer .footer_content .services_container {
+    box-sizing: border-box;
+    width: 1200px;
+    height: 110px;
+    border-bottom: 1px solid #ededed;
+
+}
+
+footer .footer_content .services_container li {
+    float: left;
+}
+
+footer .footer_content .services_container .single_service {
+    display: block;
+    box-sizing: border-box;
+    width: 240px;
+    height: 109px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer .footer_content .services_container .single_service .service_icon1 {
+    width: 56px;
+    height: 49px;
+    float: left;
+    background-image: url(../images/icons.png);
+    background-position: -253px -3px;
+}
+
+footer .footer_content .services_container .single_service .service_icon2 {
+    width: 56px;
+    height: 49px;
+    float: left;
+    background-image: url(../images/icons.png);
+    background-position: -253px -54px;
+}
+
+footer .footer_content .services_container .single_service .service_icon3 {
+    width: 56px;
+    height: 49px;
+    float: left;
+    background-image: url(../images/icons.png);
+    background-position: -253px -106px;
+}
+
+footer .footer_content .services_container .single_service .service_icon4 {
+    width: 56px;
+    height: 49px;
+    float: left;
+    background-image: url(../images/icons.png);
+    background-position: -253px -157px;
+}
+
+footer .footer_content .services_container .single_service .service_icon5 {
+    width: 56px;
+    height: 49px;
+    float: left;
+    background-image: url(../images/icons.png);
+    background-position: -253px -209px;
+}
+
+footer .footer_content .services_container .single_service .service_title {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #333;
+}
+
+footer .footer_content .services_container .single_service .service_description {
+    font-size: 12px;
+    line-height: 20px;
+    color: #666;
+}
+
+/* 网页脚的介绍部分 */
+footer .footer_introduction {
+    width: 1200px;
+    height: 188px;
+    border-bottom: 1px solid #ededed;
+}
+
+footer .footer_introduction .introduction_container {
+    float: left;
+    box-sizing: border-box;
+    width: 196px;
+    height: 187px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+
+footer .footer_introduction .introduction_container .introduction_title {
+    font-size: 16px;
+    line-height: 36px;
+    color: #333;
+}
+
+footer .footer_introduction .introduction_container .introduction_content {
+    font-size: 12px;
+    line-height: 20px;
+    color: #666;
+}
+
+footer .footer_introduction .introduction_container .help_center {
+    font-size: 12px;
+    line-height: 21px;
+    text-align: center;
+}
+
+/* 网页底部导航栏 */
+footer .footer_nav_container {
+    margin-top: 20px;
+    width: 1200px;
+    height: 100px;
+    text-align: center;
+
+}
+
+footer .footer_nav {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    width: 976px;
+    height: 12px;
+}
+
+footer .footer_nav li {
+    float: left;
+}
+
+footer .footer_nav li a {
+    display: block;
+    box-sizing: border-box;
+    height: 12px;
+    border-right: 1px solid #999;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-size: 12px;
+    color: #666;
+    line-height: 12px;
+}
+
+footer .footer_nav li .last_footNav_label {
+    border-right: 1px solid transparent;
+}
+
+.farther_info {
+    font-size: 12px;
+    color: #666;
+}

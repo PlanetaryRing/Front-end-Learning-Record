@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color:red;
+            height: 100px;
+            font-size: 12px;
+            background-color: black;
+        }
+
+        span{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 对于文字控制的属性color,font系列等,均能继承 -->
+    <!-- 对于标签大小等控制不能继承 -->
+    <div>
+        这是div里面的文字<br>
+        <span>
+            这是div中span里的文字
+        </span>
+        <br>
+
+        <!-- 特殊情况 -->
+        <!-- 超链接不会继承颜色,因为浏览器赋予他默认的蓝色 -->
+        <a href="../../综合案例-带跳转/index.html">超链接不会继承颜色</a>
+        <br>
+
+        <!-- h系列自己有自己的字号,会不完美继承,即改变字号,但不是指定字号 -->
+        <h1>h系列的标题标签不会完全继承字号大小</h1>
+    </div>
+</body>
+</html>

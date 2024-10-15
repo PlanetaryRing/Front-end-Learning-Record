@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 塌陷现象 */
+        /* 出现在相互嵌套的块级元素,子元素的margin-top会作用在父级元素上,导致父级元素一起向下移动 */
+        .father{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 解决方法 */
+            /* 给父级添加border(如果有) */
+            /* 父级元素设置为overflow:hidden */
+            /* 转换为行内块元素 */
+            /* 设置浮动 */
+
+            overflow: hidden;/* 比较完美的解决方案 */
+        }
+
+        .son{
+            width: 100px;
+            height: 100px;
+            background-color: #66ccff;
+
+            /* 若需要将子标签移动到父标签的中间(竖直方向上),应该设置父级标签的padding属性 */
+            /* 错误写法是调整son类的margin标签 */
+            /* 这样做会使得整体的margin被设置,同时父子级标签的(竖直方向)相对位置不变 */
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

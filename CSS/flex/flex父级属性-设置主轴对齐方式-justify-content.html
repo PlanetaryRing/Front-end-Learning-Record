@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      display: flex;
+      width: 400px;
+      height: 150px;
+      background-color: lightblue;
+    }
+
+    .y-box {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      height: 300px;
+      background-color: lightblue;
+    }
+
+    .y-box span {
+      width: 50px;
+      height: 50px;
+      background-color: yellow;
+    }
+
+    .box span {
+      width: 50px;
+      height: 50px;
+      background-color: yellow;
+    }
+
+    .start {
+      /* 默认属性 */
+      justify-content: flex-start;
+    }
+
+    .end {
+      justify-content: end;
+    }
+
+    .center {
+      justify-content: center;
+    }
+
+    .around {
+      justify-content: space-around;
+    }
+
+    .between {
+      justify-content: space-between;
+    }
+  </style>
+</head>
+
+<body>
+  <div>justify-content用于设置<b>主轴</b>上的子元素排列方式</div>
+  <button type="button">转换方向</button>
+
+  <hr>
+  <b>flex-start 头部对齐</b>
+  <div class="box start">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+  </div>
+
+  <hr>
+  <b>flex-end 尾部对齐</b>
+  <div class="box end">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+  </div>
+
+  <hr>
+  <b>center 沿着主轴居中对齐</b>
+  <div class="box center">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+  </div>
+
+  <hr>
+  <b>space-around 平分剩余空间</b>
+  <div class="box around">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+  </div>
+
+  <hr>
+  <b>space-between 填满两侧后,余下的平分剩余空间</b>
+  <div class="box between">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+  </div>
+  <script>
+    let switcher = function () {
+      let boxes = document.querySelectorAll(".box");
+      if (boxes.length != 0) {
+        for (let i of boxes) {
+          i.className = "y-box";
+        }
+      }
+      else {
+        boxes = document.querySelectorAll(".y-box");
+        for (let i of boxes) {
+          i.className = "box";
+        }
+      }
+    }
+    document.querySelector("button").addEventListener("click", switcher);
+  </script>
+</body>
+
+</html>

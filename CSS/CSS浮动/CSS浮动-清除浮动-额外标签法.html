@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 什么是清除浮动 */
+        /* 如果子元素浮动了,此时子元素不能撑开标准流的块级父级元素 */
+        .top{
+            margin: 0 auto;
+
+            width: 1000px;
+            /* 不指定父级标签的高度,同时浮动的标签不撑开父级标签,导致父级标签的行高为0 */
+            /* height: 300px; */
+            background-color: red;
+
+            /* 解决办法:额外标签法 */
+            /* 在受浮动影响的父级标签的最后添加一个块元素,给添加的块元素设置clear:both */
+        }
+
+        .bottom{
+            height: 100px;
+            background-color: green;
+        }
+
+        .left{
+            float: left;
+
+            width: 200px;
+            height: 300px;
+            background-color: yellow;
+        }
+
+        .right{
+            float: right;
+
+            width: 790px;
+            height: 300px;
+            background-color: purple;
+        }
+
+        .clearfix{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="bottom"></div>
+</body>
+</html>

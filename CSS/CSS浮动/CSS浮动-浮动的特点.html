@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            width: 100px;
+            height: 100px;
+            float: left;
+            background-color: red;
+
+            /* 如果想向下移动盒子,可以添加margin-top属性 */
+            margin-top: 50px;
+
+        }
+
+        .two {
+            width: 200px;
+            height: 200px;
+            float: left;
+
+            /* 浮动更高级,不能生效 */
+            margin:0 auto;
+
+            background-color: orange;
+        }
+
+        .three {
+            width: 300px;
+            height: 300px;
+            background-color: gold;
+        }
+
+        /* 浮动的特点 */
+        /* 浮动会脱离标准流,在标准流中不占位置 */
+        /* 相当于浏览器分为两个图层 */
+        /* 标准流与浮动为底层和顶层两个图层 */
+        /* 添加浮动标签,相当于将原来的标签提升到顶层图层 */
+        /* 余下的标签按照标准流的排列方式继续排列 */
+        /* 只是盒子脱离了标准流,文字并没完全脱离 */
+
+        /* 浮动的标签是顶对齐的 */
+
+        /* 浮动后的标签具有行内块的特点,并且比行内块高级 */
+
+        /* 浮动的元素不能通过margin:0 auto\text-align:center使其居中 */
+    </style>
+</head>
+
+<body>
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+</body>
+
+</html>

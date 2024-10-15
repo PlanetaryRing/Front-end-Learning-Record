@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 优先级公式 */
+        /* 继承 < 通配符选择器(*) < 标签选择器 < 类选择器 < id选择器 < 行内选择器 < !important */
+        
+        /* !important写法: */
+        /* !important写在属性值后面,分号前面 */
+        /* !important不会提高继承的优先级,继承的优先级永远最低 */
+
+        /* 复合选择器的权重比较 */
+        /* 权重计算公式:行内样式个数,id选择器个数,类选择器个数,标签选择器个数 */
+        /* 依次分四级,数出选择器的个数,从高级别依次往下比较,同级选择器个数越多,权重越大 */
+
+        /* 若选择器同为继承,则优先选择离目标标签较近的父级标签继承 */
+        div{
+            color: pink !important;
+            font-size: 66px;
+            font-weight: 700px;
+            text-align: center;
+            line-height: 80px;
+            background-color: brown;
+        }
+
+        .set_blue{
+            color: blue;
+        }
+
+        #set_yellow{
+            color: yellow;
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="set_blue" id="set_yellow">这是div</div>
+</body>
+</html>

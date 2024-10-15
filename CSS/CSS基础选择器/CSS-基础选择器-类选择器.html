@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 类选择器 */
+        /* 用法:
+
+            .类名{ css属性:属性值 }
+
+        */
+        /* 类名来自各个标签的class属性,class属性的属性值就是类名 */
+        ._red
+        {
+            color: red;
+        }
+
+        ._green
+        {
+            color: green;
+        }
+
+        ._size
+        {
+            font-size: 66px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 当一个标签需要使用多个类的时候,可以在class属性中依次写上需要的类,类之间使用空格隔开 -->
+    <div class="_red _size">这是一段文字1</div>
+    <div class="_green">这是一段文字2</div>
+</body>
+</html>

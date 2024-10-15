@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center {
+            margin: 0 auto;
+
+            background-color: skyblue;
+
+            width: 1200px;
+            height: 5000px;
+        }
+
+        .followedButton {
+            /* 
+            1. 利用top,left属性将元素定位到居中的位置
+            2. 利用transform调整位移,横向位移的量为版心的一半
+            */
+            position: fixed;
+            left: 50%;
+            top: 75%;
+            transform: translateX(600px);
+            background-color: rgba(0, 0, 0, 0.5);
+
+            width: 50px;
+            height: 80px;
+        }
+
+        .btn {
+            width: 50px;
+            height: 80px;
+
+            border: 0;
+            margin: 0 0;
+
+
+            background-color: rgba(0, 0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+        这是测试的文字<br>
+    </div>
+    <div class="followedButton">
+        <button class="btn">
+
+        </button>
+    </div>
+
+    <script>
+        let btn = document.querySelector("button")
+        btn.addEventListener("click", function () {
+            window.scrollTo(0,0)
+        })
+    </script>
+</body>
+
+</html>

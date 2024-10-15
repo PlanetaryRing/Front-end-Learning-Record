@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .body {
+            margin: 0 auto;
+
+            width: 1226px;
+            height: 614px;
+            /* background-color: #66ccff; */
+        }
+
+        .left_cell {
+            float: left;
+
+            width: 234px;
+            height: 614px;
+            background-color: #800080;
+        }
+
+        .right_cell {
+            float: right;
+
+            width: 978px;
+            height: 614px;
+            /* background-color: rgba(120, 120, 120, .5); */
+        }
+
+        .cell {
+            float: left;
+
+            width: 234px;
+            height: 300px;
+            margin-right: 14px;
+            margin-bottom: 14px;
+            background-color: #87ceeb;
+        }
+
+        /* 如果父级标签的宽度不足,浮动的元素会自动换行 */
+        .cell:nth-child(4n){
+            margin-right: 0;
+        }
+
+        ul{
+            /* 去除li的小圆点 */
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <div class="left_cell"></div>
+        <div class="right_cell">
+            <ul>
+                <li class="cell"></li>
+                <li class="cell"></li>
+                <li class="cell"></li>
+                <li class="cell"></li>
+                <li class="cell"></li>
+                <li class="cell"></li>
+                <li class="cell"></li>
+                <li class="cell"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

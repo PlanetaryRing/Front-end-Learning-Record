@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选择父级标签的第一个子标签 */
+        /* 待选择的标签类型:first-child */
+        li:first-child{
+            background-color: red;
+        }
+
+        /* 选择父级标签的倒数第一个子标签 */
+        /* 待选择的标签类型:last-child */
+        li:last-child{
+            background-color: #66ccff;
+        }
+
+        /* 选择父级标签的顺数第x个子标签,x写在括号内 */
+        /* 待选择的标签类型:nth-child(x) */
+        li:nth-child(2){
+            background-color: yellow;
+        }
+
+        /* 选择父级标签的倒数第x个子标签,x写在括号内 */
+        /* 待选择的标签类型:nth-last-child(x) */
+        li:nth-last-child(2){
+            background-color: green;
+        }
+
+        /* x可以是数学表达式 */
+        /* 特殊表达 */
+        /* -n+x:找到前x个 */
+        /* n+x:从第x个往后 */
+        /* n从0开始取整数 */
+
+        li:nth-child(2n-1){
+            font-size: 66px;
+            color: lemonchiffon;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>这是第1个单元格</li>
+        <li>这是第2个单元格</li>
+        <li>这是第3个单元格</li>
+        <li>这是第4个单元格</li>
+        <li>这是第5个单元格</li>
+    </ul>
+</body>
+</html>
